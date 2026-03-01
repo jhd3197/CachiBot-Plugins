@@ -13,7 +13,7 @@ Official plugin registry for [CachiBot](https://github.com/jhd3197/CachiBot).
 
 ## How it works
 
-CachiBot instances fetch `registry.json` from this repo (via the CachiBot website proxy) on first startup. Plugins marked `default: true` are automatically installed to `~/.cachibot/plugins/`.
+On first launch, each CachiBot instance fetches `registry.json` from this repo. Any plugin flagged with `default: true` is then automatically installed into `~/.cachibot/plugins/`.
 
 ## Plugin structure
 
