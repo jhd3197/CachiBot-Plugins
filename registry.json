@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "name": "code_canvas",
+      "version": "0.1.0",
+      "display_name": "Code Canvas",
+      "description": "Canvas-style code editing with syntax highlighting",
+      "icon": "code",
+      "color": "#8b5cf6",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "code_canvas.py"]
+    },
+    {
+      "name": "html_preview",
+      "version": "0.1.0",
+      "display_name": "HTML Preview",
+      "description": "Live HTML/CSS/JS preview in a sandboxed side panel",
+      "icon": "globe",
+      "color": "#f97316",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "html_preview.py"]
+    },
+    {
+      "name": "doc_writer",
+      "version": "0.1.0",
+      "display_name": "Document Writer",
+      "description": "Rich document editing with markdown rendering",
+      "icon": "file-text",
+      "color": "#06b6d4",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "doc_writer.py"]
+    },
+    {
+      "name": "website_builder",
+      "version": "0.1.0",
+      "display_name": "Website Builder",
+      "description": "Generate websites via multi-agent pipeline",
+      "icon": "globe",
+      "color": "#3b82f6",
+      "category": "Creative",
+      "official": true,
+      "default": false,
+      "files": ["plugin.toml", "website_builder.py"]
+    }
+  ]
+}
