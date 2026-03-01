@@ -1,0 +1,34 @@
+[plugin]
+name = "react_playground"
+display_name = "React Playground"
+description = "Create and preview React/JSX components with live rendering"
+version = "0.1.0"
+author = "CachiBot Team"
+type = "tool"
+
+[plugin.ui]
+icon = "component"
+color = "#61dafb"
+group = "Creative"
+
+[plugin.scope]
+contexts = ["chat", "room"]
+
+[plugin.requires]
+python = ">=3.10"
+filesystem = false
+network = false
+imports = []
+
+[plugin.permissions]
+allow_env_vars = []
+allow_paths = []
+
+[plugin.workspace]
+display_name = "React Playground"
+icon = "component"
+description = "React component playground workspace"
+accent_color = "#61dafb"
+toolbar = ["create_react_component", "update_react_component"]
+default_artifact_type = "react"
+auto_open_panel = true

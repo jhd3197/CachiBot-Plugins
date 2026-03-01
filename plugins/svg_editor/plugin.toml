@@ -1,0 +1,34 @@
+[plugin]
+name = "svg_editor"
+display_name = "SVG Editor"
+description = "Create and edit SVG graphics and illustrations"
+version = "0.1.0"
+author = "CachiBot Team"
+type = "tool"
+
+[plugin.ui]
+icon = "image"
+color = "#a855f7"
+group = "Creative"
+
+[plugin.scope]
+contexts = ["chat", "room"]
+
+[plugin.requires]
+python = ">=3.10"
+filesystem = false
+network = false
+imports = []
+
+[plugin.permissions]
+allow_env_vars = []
+allow_paths = []
+
+[plugin.workspace]
+display_name = "SVG Editor"
+icon = "image"
+description = "SVG graphics creation workspace"
+accent_color = "#a855f7"
+toolbar = ["create_svg", "update_svg"]
+default_artifact_type = "svg"
+auto_open_panel = true

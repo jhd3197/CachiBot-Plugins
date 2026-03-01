@@ -1,0 +1,34 @@
+[plugin]
+name = "data_chart"
+display_name = "Data Chart"
+description = "Create data visualizations and charts with SVG rendering"
+version = "0.1.0"
+author = "CachiBot Team"
+type = "tool"
+
+[plugin.ui]
+icon = "bar-chart-3"
+color = "#eab308"
+group = "Creative"
+
+[plugin.scope]
+contexts = ["chat", "room"]
+
+[plugin.requires]
+python = ">=3.10"
+filesystem = false
+network = false
+imports = []
+
+[plugin.permissions]
+allow_env_vars = []
+allow_paths = []
+
+[plugin.workspace]
+display_name = "Data Chart"
+icon = "bar-chart-3"
+description = "Data visualization workspace"
+accent_color = "#eab308"
+toolbar = ["create_chart", "update_chart"]
+default_artifact_type = "svg"
+auto_open_panel = true

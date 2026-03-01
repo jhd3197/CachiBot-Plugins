@@ -1,0 +1,34 @@
+[plugin]
+name = "email_template"
+display_name = "Email Template"
+description = "Create and preview HTML email templates with live rendering"
+version = "0.1.0"
+author = "CachiBot Team"
+type = "tool"
+
+[plugin.ui]
+icon = "mail"
+color = "#f43f5e"
+group = "Creative"
+
+[plugin.scope]
+contexts = ["chat", "room"]
+
+[plugin.requires]
+python = ">=3.10"
+filesystem = false
+network = false
+imports = []
+
+[plugin.permissions]
+allow_env_vars = []
+allow_paths = []
+
+[plugin.workspace]
+display_name = "Email Template"
+icon = "mail"
+description = "Email template design workspace"
+accent_color = "#f43f5e"
+toolbar = ["create_email_template", "update_email_template"]
+default_artifact_type = "html"
+auto_open_panel = true

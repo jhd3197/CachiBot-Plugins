@@ -48,6 +48,138 @@
       "official": true,
       "default": false,
       "files": ["plugin.toml", "website_builder.py"]
+    },
+    {
+      "name": "blog_writer",
+      "version": "0.1.0",
+      "display_name": "Blog Writer",
+      "description": "Create and edit blog articles with rich markdown canvas",
+      "icon": "pen-line",
+      "color": "#ec4899",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "blog_writer.py"]
+    },
+    {
+      "name": "diagram_maker",
+      "version": "0.1.0",
+      "display_name": "Diagram Maker",
+      "description": "Create and edit Mermaid diagrams in a side panel",
+      "icon": "git-branch",
+      "color": "#10b981",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "diagram_maker.py"]
+    },
+    {
+      "name": "svg_editor",
+      "version": "0.1.0",
+      "display_name": "SVG Editor",
+      "description": "Create and edit SVG graphics and illustrations",
+      "icon": "image",
+      "color": "#a855f7",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "svg_editor.py"]
+    },
+    {
+      "name": "react_playground",
+      "version": "0.1.0",
+      "display_name": "React Playground",
+      "description": "Create and preview React/JSX components with live rendering",
+      "icon": "component",
+      "color": "#61dafb",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "react_playground.py"]
+    },
+    {
+      "name": "email_template",
+      "version": "0.1.0",
+      "display_name": "Email Template",
+      "description": "Create and preview HTML email templates with live rendering",
+      "icon": "mail",
+      "color": "#f43f5e",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "email_template.py"]
+    },
+    {
+      "name": "data_chart",
+      "version": "0.1.0",
+      "display_name": "Data Chart",
+      "description": "Create data visualizations and charts with SVG rendering",
+      "icon": "bar-chart-3",
+      "color": "#eab308",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "data_chart.py"]
+    },
+    {
+      "name": "spreadsheet",
+      "version": "0.1.0",
+      "display_name": "Spreadsheet",
+      "description": "Create interactive data tables and spreadsheets with canvas preview",
+      "icon": "table",
+      "color": "#22c55e",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "spreadsheet.py"]
+    },
+    {
+      "name": "slide_deck",
+      "version": "0.1.0",
+      "display_name": "Slide Deck",
+      "description": "Create presentation slides with live canvas preview",
+      "icon": "presentation",
+      "color": "#f59e0b",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "slide_deck.py"]
+    },
+    {
+      "name": "pdf_document",
+      "version": "0.1.0",
+      "display_name": "PDF Document",
+      "description": "Create print-ready PDF-style documents with canvas preview",
+      "icon": "file-down",
+      "color": "#ef4444",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "pdf_document.py"]
+    },
+    {
+      "name": "resume_builder",
+      "version": "0.1.0",
+      "display_name": "Resume Builder",
+      "description": "Create professional resumes and CVs with canvas preview",
+      "icon": "user",
+      "color": "#6366f1",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "resume_builder.py"]
+    },
+    {
+      "name": "social_post",
+      "version": "0.1.0",
+      "display_name": "Social Post",
+      "description": "Preview social media posts for Twitter, LinkedIn, and Instagram",
+      "icon": "share-2",
+      "color": "#0ea5e9",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "social_post.py"]
     }
   ]
 }

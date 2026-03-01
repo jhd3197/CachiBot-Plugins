@@ -1,0 +1,34 @@
+[plugin]
+name = "pdf_document"
+display_name = "PDF Document"
+description = "Create print-ready PDF-style documents with canvas preview"
+version = "0.1.0"
+author = "CachiBot Team"
+type = "tool"
+
+[plugin.ui]
+icon = "file-down"
+color = "#ef4444"
+group = "Creative"
+
+[plugin.scope]
+contexts = ["chat", "room"]
+
+[plugin.requires]
+python = ">=3.10"
+filesystem = false
+network = false
+imports = []
+
+[plugin.permissions]
+allow_env_vars = []
+allow_paths = []
+
+[plugin.workspace]
+display_name = "PDF Document"
+icon = "file-down"
+description = "Print-ready document design workspace"
+accent_color = "#ef4444"
+toolbar = ["create_pdf", "update_pdf"]
+default_artifact_type = "html"
+auto_open_panel = true
