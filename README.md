@@ -20,3 +20,5 @@ On first launch, each CachiBot instance fetches `registry.json` from this repo. 
 Each plugin directory contains:
 - `plugin.toml` -- manifest with metadata, permissions, and workspace config
 - `<name>.py` -- plugin implementation (subclass of `CachibotPlugin`)
+
+See the full [Plugin Manifest Reference](https://github.com/jhd3197/CachiBot/blob/main/docs/plugins/manifest.md) for all available `plugin.toml` fields, including scope, permissions, late activation, and workspace config.
