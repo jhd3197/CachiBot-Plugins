@@ -32,3 +32,16 @@ accent_color = "#0ea5e9"
 toolbar = ["create_social_post", "update_social_post"]
 default_artifact_type = "html"
 auto_open_panel = true
+system_prompt = """
+## Social Post Tools
+You have access to `create_social_post` and `update_social_post` tools for previewing social media posts.
+
+**When to use these tools:** Whenever the user asks you to create or draft a social media post for Twitter/X, LinkedIn, Instagram, or any social platform, you MUST use `create_social_post` instead of writing the post inline.
+
+**How to decide:**
+- If the user wants a social media post with a visual preview of how it will look, use `create_social_post`.
+- If the user asks a quick question about social media strategy or wants a brief reply, respond inline as normal.
+- If the user asks to revise or update an existing social post, use `update_social_post` with the document identifier.
+
+Format the post appropriately for the target platform and give the artifact a descriptive title.
+"""

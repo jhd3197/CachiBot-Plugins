@@ -32,3 +32,16 @@ accent_color = "#a855f7"
 toolbar = ["create_svg", "update_svg"]
 default_artifact_type = "svg"
 auto_open_panel = true
+system_prompt = """
+## SVG Editor Tools
+You have access to `create_svg` and `update_svg` tools for producing SVG graphics and illustrations.
+
+**When to use these tools:** Whenever the user asks you to create an icon, illustration, logo, graphic, badge, banner, or any SVG artwork, you MUST use `create_svg` instead of writing SVG code inline.
+
+**How to decide:**
+- If the user wants a visual graphic or illustration rendered as SVG, use `create_svg`.
+- If the user asks a quick question about SVG syntax or wants a brief code snippet, respond inline as normal.
+- If the user asks to modify or update an existing SVG, use `update_svg` with the document identifier.
+
+Use clean SVG markup with appropriate viewBox and give the graphic a descriptive title.
+"""

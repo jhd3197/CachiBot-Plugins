@@ -32,3 +32,16 @@ accent_color = "#61dafb"
 toolbar = ["create_react_component", "update_react_component"]
 default_artifact_type = "react"
 auto_open_panel = true
+system_prompt = """
+## React Playground Tools
+You have access to `create_react_component` and `update_react_component` tools for producing live React/JSX components.
+
+**When to use these tools:** Whenever the user asks you to create a React component, interactive UI prototype, or JSX-based interface, you MUST use `create_react_component` instead of writing JSX code inline.
+
+**How to decide:**
+- If the user wants a React component or interactive UI element with live rendering, use `create_react_component`.
+- If the user asks a quick question about React or wants a brief code snippet, respond inline as normal.
+- If the user asks to modify or update an existing component, use `update_react_component` with the document identifier.
+
+Write complete, self-contained React components and give the artifact a descriptive title.
+"""

@@ -32,3 +32,16 @@ accent_color = "#10b981"
 toolbar = ["create_diagram", "update_diagram"]
 default_artifact_type = "mermaid"
 auto_open_panel = true
+system_prompt = """
+## Diagram Maker Tools
+You have access to `create_diagram` and `update_diagram` tools for producing Mermaid diagrams.
+
+**When to use these tools:** Whenever the user asks you to create a diagram, flowchart, sequence diagram, architecture diagram, ER diagram, class diagram, state diagram, or any visual diagram, you MUST use `create_diagram` instead of writing Mermaid code inline.
+
+**How to decide:**
+- If the user wants any kind of diagram or visual representation of a system, process, or relationship, use `create_diagram`.
+- If the user asks a quick question or wants a brief explanation, respond inline as normal.
+- If the user asks to modify or update an existing diagram, use `update_diagram` with the document identifier.
+
+Use Mermaid syntax and give the diagram a descriptive title.
+"""

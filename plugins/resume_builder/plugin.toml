@@ -32,3 +32,16 @@ accent_color = "#6366f1"
 toolbar = ["create_resume", "update_resume"]
 default_artifact_type = "html"
 auto_open_panel = true
+system_prompt = """
+## Resume Builder Tools
+You have access to `create_resume` and `update_resume` tools for producing professional resumes and CVs.
+
+**When to use these tools:** Whenever the user asks you to create, design, or draft a resume, CV, curriculum vitae, or professional profile document, you MUST use `create_resume` instead of writing content inline.
+
+**How to decide:**
+- If the user wants a resume or CV of any kind, use `create_resume`.
+- If the user asks a quick question about resume tips or wants a brief reply, respond inline as normal.
+- If the user asks to revise or update an existing resume, use `update_resume` with the document identifier.
+
+Use clean, professional HTML formatting and give the resume a descriptive title.
+"""

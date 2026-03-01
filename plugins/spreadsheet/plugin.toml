@@ -32,3 +32,16 @@ accent_color = "#22c55e"
 toolbar = ["create_spreadsheet", "update_spreadsheet"]
 default_artifact_type = "html"
 auto_open_panel = true
+system_prompt = """
+## Spreadsheet Tools
+You have access to `create_spreadsheet` and `update_spreadsheet` tools for producing interactive data tables.
+
+**When to use these tools:** Whenever the user asks you to create a spreadsheet, data table, comparison table, pricing table, or any structured tabular data, you MUST use `create_spreadsheet` instead of writing a markdown table inline.
+
+**How to decide:**
+- If the user wants structured tabular data that benefits from an interactive table view, use `create_spreadsheet`.
+- If the user asks a quick question or wants a brief inline table (2-3 rows), respond inline as normal.
+- If the user asks to modify or update an existing spreadsheet, use `update_spreadsheet` with the document identifier.
+
+Organize data into clear columns with headers and give the spreadsheet a descriptive title.
+"""

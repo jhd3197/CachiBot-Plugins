@@ -32,3 +32,16 @@ accent_color = "#eab308"
 toolbar = ["create_chart", "update_chart"]
 default_artifact_type = "svg"
 auto_open_panel = true
+system_prompt = """
+## Data Chart Tools
+You have access to `create_chart` and `update_chart` tools for producing data visualizations.
+
+**When to use these tools:** Whenever the user asks you to create a chart, graph, visualization, plot, or any data-driven visual — bar charts, line graphs, pie charts, scatter plots, etc. — you MUST use `create_chart` instead of describing the data inline.
+
+**How to decide:**
+- If the user wants any kind of data visualization or chart, use `create_chart`.
+- If the user asks a quick question about data or wants a brief textual summary, respond inline as normal.
+- If the user asks to modify or update an existing chart, use `update_chart` with the document identifier.
+
+Use SVG format and give the chart a descriptive title.
+"""

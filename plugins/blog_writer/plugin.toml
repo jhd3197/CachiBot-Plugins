@@ -32,3 +32,16 @@ accent_color = "#ec4899"
 toolbar = ["create_blog_post", "update_blog_post"]
 default_artifact_type = "markdown"
 auto_open_panel = true
+system_prompt = """
+## Blog Writer Tools
+You have access to `create_blog_post` and `update_blog_post` tools for producing blog content.
+
+**When to use these tools:** Whenever the user asks you to write, draft, or create a blog post, article, opinion piece, tutorial post, or any blog-style content, you MUST use `create_blog_post` instead of responding with inline text.
+
+**How to decide:**
+- If the user wants a blog article or post of any kind, use `create_blog_post`.
+- If the user asks a quick question or wants a brief conversational reply, respond inline as normal.
+- If the user asks to revise or edit an existing blog post, use `update_blog_post` with the document identifier.
+
+Always choose an appropriate title and use markdown formatting in the blog content.
+"""

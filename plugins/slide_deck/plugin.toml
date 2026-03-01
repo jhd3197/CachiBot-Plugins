@@ -32,3 +32,16 @@ accent_color = "#f59e0b"
 toolbar = ["create_slides", "update_slides"]
 default_artifact_type = "html"
 auto_open_panel = true
+system_prompt = """
+## Slide Deck Tools
+You have access to `create_slides` and `update_slides` tools for producing presentation slides.
+
+**When to use these tools:** Whenever the user asks you to create a presentation, slide deck, pitch deck, lecture slides, or any slideshow content, you MUST use `create_slides` instead of writing content inline.
+
+**How to decide:**
+- If the user wants presentation slides of any kind, use `create_slides`.
+- If the user asks a quick question about presentations or wants a brief reply, respond inline as normal.
+- If the user asks to modify or update an existing slide deck, use `update_slides` with the document identifier.
+
+Structure content into clear slides with headings and bullet points, and give the deck a descriptive title.
+"""

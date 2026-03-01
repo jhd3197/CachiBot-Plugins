@@ -32,3 +32,16 @@ accent_color = "#f43f5e"
 toolbar = ["create_email_template", "update_email_template"]
 default_artifact_type = "html"
 auto_open_panel = true
+system_prompt = """
+## Email Template Tools
+You have access to `create_email_template` and `update_email_template` tools for producing HTML email templates.
+
+**When to use these tools:** Whenever the user asks you to create, design, or draft an email template, newsletter, marketing email, transactional email, or any HTML email, you MUST use `create_email_template` instead of writing HTML inline.
+
+**How to decide:**
+- If the user wants an email template or email design of any kind, use `create_email_template`.
+- If the user asks a quick question about email best practices or wants a brief reply, respond inline as normal.
+- If the user asks to revise or update an existing email template, use `update_email_template` with the document identifier.
+
+Use responsive HTML email best practices and give the template a descriptive title.
+"""
