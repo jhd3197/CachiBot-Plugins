@@ -1,0 +1,79 @@
+[plugin]
+name = "image_studio"
+display_name = "Image Studio"
+description = "Generate, refine, and remix AI images with precision controls"
+version = "0.1.0"
+author = "CachiBot Team"
+type = "tool"
+
+[plugin.ui]
+icon = "sparkles"
+color = "#ec4899"
+group = "Creative"
+
+[plugin.scope]
+contexts = ["chat", "room"]
+allow_late_activation = false
+
+[plugin.requires]
+python = ">=3.10"
+filesystem = false
+network = true
+imports = ["prompture"]
+
+[plugin.permissions]
+allow_env_vars = ["OPENAI_API_KEY", "GOOGLE_API_KEY", "STABILITY_API_KEY", "XAI_API_KEY"]
+allow_paths = []
+
+[[plugin.config]]
+name = "defaultSize"
+display_name = "Default Size"
+type = "select"
+default = "1024x1024"
+description = "Default image dimensions for generation."
+options = ["1024x1024", "1792x1024", "1024x1792"]
+
+[[plugin.config]]
+name = "defaultQuality"
+display_name = "Quality (OpenAI)"
+type = "select"
+default = "hd"
+description = "Image quality for DALL-E models."
+options = ["standard", "hd"]
+
+[[plugin.config]]
+name = "defaultStyle"
+display_name = "Style (OpenAI)"
+type = "select"
+default = "vivid"
+description = "DALL-E 3 style preset."
+options = ["vivid", "natural"]
+
+[plugin.workspace]
+display_name = "Image Studio"
+icon = "sparkles"
+description = "AI image generation and refinement workspace"
+accent_color = "#ec4899"
+toolbar = ["create_image", "refine_image", "remix_image"]
+default_artifact_type = "image"
+auto_open_panel = true
+system_prompt = """
+## Image Studio Tools
+You have access to `create_image`, `refine_image`, and `remix_image` for AI image generation.
+
+**When to use these tools:** Whenever the user asks you to generate, create, draw, illustrate, design, or produce an image, you MUST use `create_image`. Do NOT describe what you would generate — actually generate it.
+
+**Tool selection:**
+- `create_image` — First-time generation from a text prompt. Always craft a detailed, descriptive prompt even if the user's request is brief. Expand short requests into rich scene descriptions with lighting, style, composition, and detail.
+- `refine_image` — User wants to tweak an existing generated image. Adjusts the prompt, size, quality, or style and regenerates. Use when the user says things like "make it darker", "change the background", "more detailed", "try landscape", etc.
+- `remix_image` — User wants a completely different take on the same concept. Rewrites the prompt with a new artistic direction while keeping the core subject. Use for "try a different style", "make it watercolor", "cyberpunk version", etc.
+
+**Prompt crafting tips (for create_image and remix_image):**
+- Always write prompts in English regardless of the user's language.
+- Be specific about: subject, setting, lighting, colors, mood, composition, art style.
+- For photorealistic: mention camera type, lens, lighting setup.
+- For illustration: mention art style, medium, technique.
+- Avoid negatives ("no X") — describe what you want, not what you don't.
+
+**Workflow:** Generate first → let the user see it → refine or remix based on feedback. Always show the image before asking for opinions.
+"""
