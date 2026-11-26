@@ -33,6 +33,7 @@ Every plugin renders live in the **side panel**, so you can see and iterate on y
 | **Diagram Maker** | `mermaid` | Flowcharts, sequence diagrams, ER diagrams, Gantt charts |
 | **SVG Editor** | `svg` | Vector graphics, icons, logos, and illustrations |
 | **Data Chart** | `svg` | Bar charts, line charts, pie charts, and data visualizations |
+| **Image Studio** | `image` | Generate, refine, and remix AI images with precision controls |
 
 ### Productivity
 
