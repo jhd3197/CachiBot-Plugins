@@ -180,6 +180,18 @@
       "official": true,
       "default": true,
       "files": ["plugin.toml", "social_post.py"]
+    },
+    {
+      "name": "image_studio",
+      "version": "0.1.0",
+      "display_name": "Image Studio",
+      "description": "Generate, refine, and remix AI images with precision controls",
+      "icon": "sparkles",
+      "color": "#ec4899",
+      "category": "Creative",
+      "official": true,
+      "default": true,
+      "files": ["plugin.toml", "image_studio.py"]
     }
   ]
 }
